@@ -85,7 +85,8 @@ class Vision {
   /// You can provide either [CustomImageLabelerOptions] to use a custom tflite model
   /// Or [AutoMLImageLabelerOptions] to use auto ml vision model trained by you
   ImageLabeler imageLabeler([dynamic imageLabelerOptions]) {
-    return ImageLabeler._(imageLabelerOptions ?? ImageLabelerOptions());
+    throw UnimplementedError();
+    // return ImageLabeler._(imageLabelerOptions ?? ImageLabelerOptions());
   }
 
   /// Returns instance of [BarcodeScanner]. By default it searches the input image for all [BarcodeFormat]s.
@@ -98,17 +99,20 @@ class Vision {
   /// To limit the result to specific [PoseLandmark] pass list of [PoseLandmark]'s a
   /// All the 33 positions have been declared as static constants in [PoseLandmark] class
   PoseDetector poseDetector({PoseDetectorOptions? poseDetectorOptions}) {
-    return PoseDetector(poseDetectorOptions ?? PoseDetectorOptions());
+    throw UnimplementedError();
+    // return PoseDetector(poseDetectorOptions ?? PoseDetectorOptions());
   }
 
   /// Creates on instance of [LanguageModelManager].
   LanguageModelManager languageModelManager() {
-    return LanguageModelManager._();
+    throw UnimplementedError();
+    // return LanguageModelManager._();
   }
 
   /// Returns an instance of [DigitalInkRecogniser]
   DigitalInkRecogniser digitalInkRecogniser() {
-    return DigitalInkRecogniser._();
+    throw UnimplementedError();
+    // return DigitalInkRecogniser._();
   }
 
   /// Return an instance of [TextDetector].
@@ -118,22 +122,26 @@ class Vision {
 
   /// Return an instance of [FaceDetector].
   FaceDetector faceDetector([FaceDetectorOptions? options]) {
-    return FaceDetector._(options ?? const FaceDetectorOptions());
+    throw UnimplementedError();
+    // return FaceDetector._(options ?? const FaceDetectorOptions());
   }
 
   /// Returns an instance of [ObjectDetector].
   ObjectDetector objectDetector(ObjectDetectorOptionsBase options) {
-    return ObjectDetector._(options);
+    throw UnimplementedError();
+    // return ObjectDetector._(options);
   }
 
   /// returns an instance of [RemoteModelManager].
   RemoteModelManager remoteModelManager() {
-    return RemoteModelManager();
+    throw UnimplementedError();
+    // return RemoteModelManager();
   }
 
   /// Returns an instance of Text Detector v2.
   TextDetectorV2 textDetectorV2() {
-    return TextDetectorV2._();
+    throw UnimplementedError();
+    // return TextDetectorV2._();
   }
 }
 

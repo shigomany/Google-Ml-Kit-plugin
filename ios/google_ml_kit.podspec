@@ -32,6 +32,21 @@ flutter plugin for google ml kit
   s.ios.deployment_target   = '10.0'
   s.static_framework = true
 
+  s.exclude_files = [
+    'Classes/vision/CustomRemoteModelManager.m',
+    'Classes/vision/FaceDetector.m',
+    'Classes/vision/DigitalInkRecogniser.m',
+    'Classes/vision/GenericModelManager.h',
+    'Classes/vision/GenericModelManager.m',
+    'Classes/vision/ImageLabeler.m',
+    'Classes/vision/PoseDetector.m',
+    'Classes/nlp/LanguageIdentification.m',
+    '**/fssd_100*.tflite',
+    '**/fssd_100*.tflite',
+    '**/pose_*.tflite',
+    '**/mobile_ica*.tflite',
+  ]
+
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
